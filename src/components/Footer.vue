@@ -1,7 +1,6 @@
 <template>
   <div class="footer">
     <h1>{{ msg }}</h1>
-    <p>&copy; Jonathan Wilson 2019</p>
     <ul>
       <li>
         <a href="https://www.facebook.com/people/Jonathan-Wilson/100027603637673" target="_blank" rel="noopener"
@@ -22,8 +21,8 @@
       </li>
       <li>
         <a href="https://github.com/jonwilami323" target="_blank" rel="noopener"
-          ><div class="png-container">
-            <img :src="github" alt="github logo?">
+          ><div class="png-container" >
+            <img :src="github" alt="github logo?" style="background-color: white; border-radius: 50%;">
           </div>
         </a>
       </li>
@@ -38,6 +37,7 @@
         </a>
       </li>
     </ul>
+    <p>&copy; Jonathan Wilson 2019</p>
   </div>
 </template>
 
@@ -64,9 +64,6 @@ export default {
 </script>
 
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
 ul {
   list-style-type: none;
   padding: 0;
@@ -74,9 +71,6 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 .png-container {
     width: 40px;
