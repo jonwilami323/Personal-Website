@@ -1,6 +1,5 @@
 <template>
   <div class="footer">
-    <h1>{{ msg }}</h1>
     <ul>
       <li>
         <a href="https://www.facebook.com/people/Jonathan-Wilson/100027603637673" target="_blank" rel="noopener"
@@ -66,7 +65,8 @@ export default {
 <style scoped>
 ul {
   list-style-type: none;
-  padding: 0;
+  padding:0;
+  margin-top: 1em;
 }
 li {
   display: inline-block;
@@ -84,10 +84,10 @@ li {
 .footer {
     position: absolute;
     right: 0;
-    bottom: 0;
     left: 0;
-    padding: 1rem;
-    background-color: #030303;
+    bottom: 0;
+    height: -2.5rem;
+    background-color: #343A40;
     color: #ffffff;
     text-align: center;
   }

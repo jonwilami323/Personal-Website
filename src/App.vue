@@ -1,23 +1,12 @@
 <template>
   <div id="app">
-    <Header name="JonathanWilson"/>
-    <Footer />
-    
-
+    <Header/>
+    <div id="content-wrap">
+      <router-view/>
+    </div>
+    <Footer /> 
   </div>
 </template>
-
-<!--Global site tag (gtag.js) - Google Analytics-->
-<!--This site tag should be placed on every page-->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142191551-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-142191551-1');
-</script>
-<!--End of Google tag-->
 
 <script>
 import Footer from "@/components/Footer.vue";
@@ -33,23 +22,38 @@ export default {
 </script>
 
 <style>
+/*Standardizing margins and paddings globally
+:root {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+body * + * {
+  margin-top: 1.5em;
+}
+*/
+
+body {
+  margin:0;
+  padding:0;
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  position: relative;
+  min-height: 100vh;
 }
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+#content-wrap {
+  padding-bottom: 7.3rem;    /* Footer height */
 }
 </style>
