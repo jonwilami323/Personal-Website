@@ -27,6 +27,24 @@ export default new Router({
       name: "projects",
       component: () =>
         import("./views/Projects.vue")
-    }
+    },
+    {
+      path: "/books",
+      name: "books",
+      component: () =>
+        import("./views/Books.vue")
+    },
+    {
+      path: "/travel",
+      name: "travel",
+      component: () =>
+        import("./views/Travel.vue")
+    },
+    {
+      path: "/resources",
+      name: "resources",
+      component: () =>
+        import("./views/Resources.vue")
+    },
   ]
 });

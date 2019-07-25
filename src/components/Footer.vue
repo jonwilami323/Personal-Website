@@ -20,7 +20,7 @@
       </li>
       <li>
         <a href="https://github.com/jonwilami323" target="_blank" rel="noopener"
-          ><div class="png-container" >
+          ><div class="png-container-git" >
             <img :src="github" alt="github logo?" style="background-color: white; border-radius: 50%;">
           </div>
         </a>
@@ -41,10 +41,10 @@
 </template>
 
 <script>
-import facebook from "../assets/facebook.png";
-import instagram from "../assets/instagram.png";
-import github from "../assets/github.png";
-import linkedin from "../assets/linkedin.png";
+import facebook from "../assets/img/facebook.png";
+import instagram from "../assets/img/instagram.png";
+import github from "../assets/img/github.png";
+import linkedin from "../assets/img/linkedin.png";
 
 export default {
   name: "Footer",
@@ -75,6 +75,10 @@ li {
 .png-container {
     width: 40px;
     height: 40px;
+}
+.png-container-git img {
+    width: 30px;
+    height: 30px;
 }
 /* resize images */
 .png-container img {

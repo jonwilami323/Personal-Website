@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style>
-/*Standardizing margins and paddings globally
+/*Standardizing margins and paddings globally*/
 :root {
   box-sizing: border-box;
 }
@@ -35,10 +35,10 @@ html {
 ::after {
   box-sizing: inherit;
 }
-body * + * {
+/* body * + * {
   margin-top: 1.5em;
-}
-*/
+} */
+
 
 body {
   margin:0;
