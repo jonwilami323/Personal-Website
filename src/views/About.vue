@@ -4,16 +4,15 @@
     <div class="png-container">
       <img :src="aboutMe" alt="Me" style="border-radius: 50%;">
     </div>
-    <p>Brief Intro...Always looking for fun and challenging projects. Always looking for fun and challenging projects. 
-      Always looking for fun and challenging projects. Always looking for fun and challenging projects. Always looking for fun and challenging projects. 
-      Always looking for fun and challenging projects. Always looking for fun and challenging projects. Always looking for fun and challenging projects. 
+    <p>Brief Intro... 
     </p>
     <div>
       <b-button href="https://drive.google.com/file/d/1ce5czIl_dy6XT1l2i308iHFTbx8waciK/view?usp=sharing">Download Resume</b-button>
     </div>
     <h3>Interests</h3>
-    <p>Brief Intro...Always looking for fun and challenging projects. Always looking for fun and challenging projects. 
-      Always looking for fun and challenging projects. Always looking for fun and challenging projects.</p>
+    <p>I have an eclectic range of interests as my curiosity runs wild. Here are some of my biggest interests: reading intellectually stimulating books, 
+      hiking, tinkering with mechanics, doing construction projects, software development projects, traveling, community service, having deep engaging conversations, 
+      working out and improving my health in all areas.   </p>
     <h3>Lists</h3>
     <ul>
       <li><router-link to="/books">Good Books</router-link></li>
